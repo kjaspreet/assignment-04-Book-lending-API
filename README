@@ -11,7 +11,7 @@ Team Members-
 
 
 Instructions - 
-This APP is deployed on Heroku
+This API is deployed on Heroku
 You need Postman to send GET/POST/PATCH/DELETE requests.
 
 Note: title,author,isbn strings are required if you want to add new book in the books database. Rest of the fields are optional.
