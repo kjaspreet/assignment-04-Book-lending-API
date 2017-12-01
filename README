@@ -1,0 +1,65 @@
+Team Members- 
+1. Jaspreet Kaur
+   Student ID - 100285603
+   Email ID - jkaur53@mylangara.bc.ca
+2. Ramanpreet Kaur 
+   Student ID - 100293841
+   Email ID - rkaur92@mylangara.ca
+3. Huixuan Yang
+   Student ID - 100278422
+   Email ID - hyang36@mylangara.ca
+
+
+Instructions - 
+This APP is deployed on Heroku
+You need Postman to send GET/POST/PATCH/DELETE requests.
+
+Note: title,author,isbn strings are required if you want to add new book in the books database. Rest of the fields are optional.
+Similarly, email string is required if you want to add new user in the user database. Rest of the fields are optional.
+
+
+To run this APP please use the following steps on POSTMAN.
+
+This APP supports two collections: books and users.
+
+Books Collection:
+For getting books from the database:
+	enter: https://boiling-badlands-74979.herokuapp.com/books/ in the url and choose GET request and click on Send button in Postman.
+
+For getting book by id from the database:
+	General: https://boiling-badlands-74979.herokuapp.com/books/{id}
+	enter: https://boiling-badlands-74979.herokuapp.com/books/5a208b2f18bade171c13a118 in the url and choose GET request and click on Send button in Postman.
+
+For getting book by entering query in url from the database:
+	enter: https://boiling-badlands-74979.herokuapp.com/books?author=jaspreet in the url and choose GET request and click on Send button in Postman.
+
+For posting book to database:
+	enter: https://boiling-badlands-74979.herokuapp.com/books/ in the url and choose POST request, in "BODY" section enter the details of the book and click on Send button in Postman.
+
+For updating book details in database:
+	enter: https://boiling-badlands-74979.herokuapp.com/books/ in the url and choose PATCH request, in "BODY" section enter the details of the book and click on Send button in Postman.
+
+Users Collection:
+For getting users from the database:
+	enter: https://boiling-badlands-74979.herokuapp.com/users/ in the url and choose GET request and click on Send button in Postman.
+
+For getting users by id from the database:
+	General: https://boiling-badlands-74979.herokuapp.com/users/{id}
+	enter: https://boiling-badlands-74979.herokuapp.com/users/5a2087c718bade171c13a114 in the url and choose GET request and click on Send button in Postman.
+
+For getting users by entering query in url from the database:
+	enter: https://boiling-badlands-74979.herokuapp.com/users?email=jaspreet.mca2011@gmail.com in the url and choose GET request and click on Send button in Postman.
+
+For posting user to database:
+	enter: https://boiling-badlands-74979.herokuapp.com/users/ in the url and choose POST request, in "BODY" section enter the details of the user and click on Send button in Postman.
+
+For updating users details in database:
+	enter: https://boiling-badlands-74979.herokuapp.com/users/ in the url and choose PATCH request, in "BODY" section enter the details of the user and click on Send button in Postman.
+
+Third Party Libraries - 
+1. Joi - for validation.
+2. dotenv - for environment variables.
+3. BOOM - error handling/messages.
+4. monk - to access database.
+5. mongodb - database.
+6. hapi - server.
